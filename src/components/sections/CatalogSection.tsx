@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Icon from "@/components/ui/icon";
+import { useCart } from "@/contexts/CartContext";
 
 interface Product {
   id: number;
@@ -15,6 +16,18 @@ interface Product {
 }
 
 const CatalogSection = () => {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (product: Product) => {
+    addToCart({
+      id: product.id.toString(),
+      name: product.name,
+      price: parseInt(product.price.replace(/\s/g, '')), // Убираем пробелы и конвертируем в число
+      image: product.images[0], // Берём первое изображение
+      description: product.description
+    });
+  };
+
   const products: Product[] = [
     {
       id: 1,
@@ -119,7 +132,7 @@ const CatalogSection = () => {
                 </CardDescription>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-primary">{product.price} ₽</span>
-                  <Button>
+                  <Button onClick={() => handleAddToCart(product)}>
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     В корзину
                   </Button>
