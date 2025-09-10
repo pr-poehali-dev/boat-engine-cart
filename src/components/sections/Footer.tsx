@@ -39,9 +39,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Контакты</h4>
             <div className="space-y-2 opacity-90">
-              <p>+7 (495) 123-45-67</p>
-              <p>info@mortelezhki.ru</p>
-              <p>г. Москва, ул. Морская, д. 15</p>
+              <p>+79991700787</p>
+              <p>zvallli@mail.ru</p>
+              <p>Самарская область, г. Кинель, ул. Светлая, д. 96</p>
             </div>
           </div>
         </div>

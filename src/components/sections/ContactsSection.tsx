@@ -19,7 +19,7 @@ const ContactsSection = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-navy-dark mb-2">Телефон</h3>
-                <p className="text-gray-600">+7 (495) 123-45-67</p>
+                <p className="text-gray-600">+79991700787</p>
                 <p className="text-sm text-gray-500">Пн-Пт: 9:00-18:00</p>
               </div>
             </div>
@@ -30,7 +30,7 @@ const ContactsSection = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-navy-dark mb-2">Email</h3>
-                <p className="text-gray-600">info@mortelezhki.ru</p>
+                <p className="text-gray-600">zvallli@mail.ru</p>
               </div>
             </div>
 
@@ -40,8 +40,8 @@ const ContactsSection = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-navy-dark mb-2">Адрес</h3>
-                <p className="text-gray-600">г. Москва, ул. Морская, д. 15</p>
-                <p className="text-sm text-gray-500">Склад и производство</p>
+                <p className="text-gray-600">Самарская область, г. Кинель, ул. Светлая, д. 96</p>
+                <p className="text-sm text-gray-500">Мастерская и производство</p>
               </div>
             </div>
           </div>
