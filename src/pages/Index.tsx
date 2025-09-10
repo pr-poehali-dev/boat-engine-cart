@@ -24,7 +24,13 @@ const Index = () => {
       id: 2, 
       name: "Тележка-Универсал",
       price: "10 000",
-      images: ["/img/b4a1cf24-29b5-4335-8498-111162141e54.jpg"],
+      images: [
+        "https://cdn.poehali.dev/files/cda269d2-c726-401a-887b-f137f14928d8.jpg",
+        "https://cdn.poehali.dev/files/79b4b22e-3b63-471f-9a60-10b3a2416fca.jpg",
+        "https://cdn.poehali.dev/files/83c094be-1340-4602-9422-b10104a90bfd.jpg",
+        "https://cdn.poehali.dev/files/efdaade2-5ffa-4a0f-ad98-9d67783d7985.jpg",
+        "https://cdn.poehali.dev/files/604f67f1-d4f8-40d3-b75d-e64336766da6.jpg"
+      ],
       features: ["До 60 кг", "Для моторов и лодок", "Транцевая доска"],
       popular: true
     }
