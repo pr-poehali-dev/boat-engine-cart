@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center opacity-70">
-          <p>&copy; 2024 МорТележки. Все права защищены.</p>
+          <p>&copy; 2019 OpOzit_Lab. Все права защищены.</p>
         </div>
       </div>
     </footer>
