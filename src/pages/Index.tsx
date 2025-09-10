@@ -38,8 +38,11 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <Icon name="Anchor" size={32} className="text-primary" />
-              <span className="text-2xl font-bold text-navy-dark">МорТележки</span>
+              <img 
+                src="https://cdn.poehali.dev/files/2e151b32-f5dd-44dd-b586-1c313fd37e75.jpg" 
+                alt="OPOZIT_LAB.RU" 
+                className="h-10 object-contain"
+              />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#home" className="text-gray-600 hover:text-primary transition-colors">Главная</a>
@@ -398,8 +401,11 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Icon name="Anchor" size={32} className="text-primary" />
-                <span className="text-2xl font-bold">МорТележки</span>
+                <img 
+                  src="https://cdn.poehali.dev/files/2e151b32-f5dd-44dd-b586-1c313fd37e75.jpg" 
+                  alt="OPOZIT_LAB.RU" 
+                  className="h-8 object-contain"
+                />
               </div>
               <p className="opacity-90">
                 Надежные тележки для лодочных моторов собственного производства
