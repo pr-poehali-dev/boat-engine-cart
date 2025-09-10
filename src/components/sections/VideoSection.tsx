@@ -3,7 +3,7 @@ const VideoSection = () => {
     <section id="video" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl font-bold text-navy-dark mb-6">Видео о производстве</h2>
+          <h2 className="text-4xl font-bold text-navy-dark mb-6">Теперь выход на воду станет гораздо комфортнее!</h2>
           <p className="text-xl text-gray-600">
             Посмотрите, как мы создаём надёжные тележки для лодочных моторов
           </p>
