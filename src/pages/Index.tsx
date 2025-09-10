@@ -8,6 +8,7 @@ import DeliverySection from "@/components/sections/DeliverySection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import ContactsSection from "@/components/sections/ContactsSection";
 import Footer from "@/components/sections/Footer";
+import VisitorCounter from "@/components/ui/visitor-counter";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <ReviewsSection />
       <ContactsSection />
       <Footer />
+      <VisitorCounter />
     </div>
   );
 };
