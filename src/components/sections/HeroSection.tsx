@@ -29,7 +29,11 @@ const HeroSection = () => {
             Береги спину, не таскай мотор!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Icon name="ShoppingCart" size={20} className="mr-2" />
               Смотреть каталог
             </Button>

@@ -129,12 +129,7 @@ const CatalogSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-primary text-primary">
-            Смотреть весь каталог
-            <Icon name="ArrowRight" size={20} className="ml-2" />
-          </Button>
-        </div>
+
       </div>
     </section>
   );
