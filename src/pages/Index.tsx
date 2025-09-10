@@ -162,7 +162,7 @@ const Index = () => {
                             <img 
                               src={image} 
                               alt={`${product.name} - фото ${index + 1}`}
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-contain bg-gray-50"
                             />
                           </CarouselItem>
                         ))}
