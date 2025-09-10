@@ -13,10 +13,16 @@ const ContactsSection = () => {
       return;
     }
 
-    const message = `🔔 ЗАЯВКА НА ЗВОНОК\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n\n💬 Перезвоните клиенту для консультации по тележкам`;
-    const telegramUrl = `https://t.me/zvallli?text=${encodeURIComponent(message)}`;
+    const message = `🔔 ЗАЯВКА НА ЗВОНОК
+
+👤 Имя: ${name}
+📞 Телефон: ${phone}
+
+💬 Прошу перезвонить для консультации по тележкам для лодочных моторов`;
     
-    window.open(telegramUrl, '_blank');
+    const whatsappUrl = `https://wa.me/79991700787?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
     
     // Очистка полей после отправки
     setName("");
