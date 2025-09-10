@@ -18,6 +18,22 @@ const Index = () => {
         "https://cdn.poehali.dev/files/9264a2e0-7cac-4c10-a12a-78ab1c99faf3.jpg"
       ],
       features: ["До 60 кг", "Пневматические колеса", "Складная конструкция"],
+      description: `Тележка подходит для перевозки, хранения и обслуживания: 2-тактного лодочного мотора 9,9 – 30 лс; 4-тактного лодочного мотора 9,9 – 25 лс. Длина ноги мотора S – короткая или стандартная (381 или 454 мм).
+
+Тележка для лодочных моторов с трубой под дистанцию, подходит для Yamaha 9.9-15/20л.с. и его аналоги: Parsun, Hidea, Sea Pro, Toyama, Reef Rider, Tohatsu, Gladiator, Allfa СG, Hangkai и других, а также с приставкой PRO 9.9/20л.с.
+
+Не нужно снимать мотор с тележки, устанавливаете/снимаете мотор на транец лодки непосредственно с помощью тележки. Легкая загрузка и перевозка лодочного мотора в автомобиле.
+
+Тележка изготовлена из профтрубы 30/30/2мм. Очень крепкая. Покрыта порошковой краской в два слоя. Первый слой ЦИНКОВЫЙ грунт. Он препятствует образованию коррозии.
+
+Для оптовых клиентов возможен выбор цвета и изменение конструкции.
+
+⚠️ ВНИМАНИЕ! Тележка НЕ ПОДОЙДЕТ к мотору если:
+• Мощность мотора 9,8 лс и меньше
+• 2-тактного Suzuki DT 9,9 15 лс выпуска с 2014г
+• Любого мотора Honda
+• Длина ноги мотора L — длинный (508 или 572 мм)
+• Нет «трубки» для дистанции`,
       popular: true
     },
     {
@@ -185,13 +201,18 @@ const Index = () => {
                 <CardContent className="p-6">
                   <CardTitle className="text-navy-dark mb-2">{product.name}</CardTitle>
                   <CardDescription className="mb-4">
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {product.features.map((feature, index) => (
                         <Badge key={index} variant="secondary" className="text-xs">
                           {feature}
                         </Badge>
                       ))}
                     </div>
+                    {product.description && (
+                      <div className="text-sm text-gray-600 max-h-32 overflow-y-auto border-t pt-3">
+                        <div className="whitespace-pre-line">{product.description}</div>
+                      </div>
+                    )}
                   </CardDescription>
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-bold text-primary">{product.price} ₽</span>
