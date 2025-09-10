@@ -5,6 +5,7 @@ import VideoSection from "@/components/sections/VideoSection";
 import CatalogSection from "@/components/sections/CatalogSection";
 import ProductionSection from "@/components/sections/ProductionSection";
 import DeliverySection from "@/components/sections/DeliverySection";
+import ReviewsSection from "@/components/sections/ReviewsSection";
 import ContactsSection from "@/components/sections/ContactsSection";
 import Footer from "@/components/sections/Footer";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <CatalogSection />
       <ProductionSection />
       <DeliverySection />
+      <ReviewsSection />
       <ContactsSection />
       <Footer />
     </div>
