@@ -18,6 +18,10 @@ const ProductionCarousel = () => {
       alt: "Покрасочная камера для металлических деталей"
     },
     {
+      url: "https://cdn.poehali.dev/files/fa7385fd-69a1-4d0e-9575-bbec7efaf99a.jpg",
+      alt: "Процесс покраски металлических деталей в камере"
+    },
+    {
       url: "https://cdn.poehali.dev/files/572b0a2f-c604-48b5-8179-752433ee9e18.jpg",
       alt: "Заготовки металлических рам тележек"
     },
