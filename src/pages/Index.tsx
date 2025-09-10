@@ -70,7 +70,7 @@ const Index = () => {
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Собственное производство качественных тележек для транспортировки лодочных моторов. 
-              Надежность, проверенная морем.
+              Береги спину, не таскай мотор!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
