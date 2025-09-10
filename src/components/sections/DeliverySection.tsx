@@ -19,7 +19,7 @@ const DeliverySection = () => {
               <CardTitle className="text-navy-dark">Самовывоз</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600 mb-4">Забрать с нашего склада в Москве</p>
+              <p className="text-gray-600 mb-4">Забрать с нашей мастерской в городе Кинель, Самарская область</p>
               <p className="font-semibold text-primary">Бесплатно</p>
             </CardContent>
           </Card>
@@ -33,7 +33,7 @@ const DeliverySection = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-4">Транспортными компаниями</p>
-              <p className="font-semibold text-primary">От 1500 ₽</p>
+              <p className="font-semibold text-primary">От 500 ₽</p>
             </CardContent>
           </Card>
 
@@ -45,8 +45,8 @@ const DeliverySection = () => {
               <CardTitle className="text-navy-dark">Удобная оплата</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600 mb-4">Наличные, карта, безнал</p>
-              <p className="font-semibold text-primary">Любой способ</p>
+              <p className="text-gray-600 mb-4">Наличные, карта, перевод</p>
+              <p className="font-semibold text-primary">Удобно и просто</p>
             </CardContent>
           </Card>
         </div>
