@@ -18,7 +18,7 @@ const Index = () => {
         "https://cdn.poehali.dev/files/9264a2e0-7cac-4c10-a12a-78ab1c99faf3.jpg"
       ],
       features: ["До 60 кг", "Пневматические колеса", "Складная конструкция"],
-      popular: false
+      popular: true
     },
     {
       id: 2, 
@@ -32,7 +32,7 @@ const Index = () => {
         "https://cdn.poehali.dev/files/604f67f1-d4f8-40d3-b75d-e64336766da6.jpg"
       ],
       features: ["До 60 кг", "Для моторов и лодок", "Транцевая доска"],
-      popular: true
+      popular: false
     }
   ];
 
