@@ -4,13 +4,16 @@ import Icon from "@/components/ui/icon";
 const HeroSection = () => {
   return (
     <section id="home" className="relative overflow-hidden h-screen">
-      {/* Background Video from Rutube */}
-      <iframe
-        src="https://rutube.ru/play/embed/ef5a953d5b6d58aa03fd27513b692a5c/?autoplay=1&mute=1"
-        className="absolute inset-0 w-full h-full"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+      {/* Background Video */}
+      <video 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/video/telejki.mp4" type="video/mp4" />
+      </video>
       
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/40"></div>
