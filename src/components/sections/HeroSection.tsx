@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section id="home" className="relative overflow-hidden h-screen">
       {/* Background Video from Rutube */}
       <iframe
-        src="https://rutube.ru/play/embed/YOUR_VIDEO_ID/?p=x8L4kWFQLF7-wgHGvyZ8cQ"
+        src="https://rutube.ru/play/embed/ef5a953d5b6d58aa03fd27513b692a5c/?autoplay=1&mute=1"
         className="absolute inset-0 w-full h-full"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
