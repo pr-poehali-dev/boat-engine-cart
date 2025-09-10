@@ -9,7 +9,7 @@ const Index = () => {
       id: 1,
       name: "Тележка-Автомат",
       price: "11 000",
-      image: "/img/ad5113b4-b659-4a87-9301-08183ecd3a5f.jpg",
+      image: "https://cdn.poehali.dev/files/7a7686ae-9f8c-484a-bb73-b6a630aff46f.jpg",
       features: ["До 60 кг", "Пневматические колеса", "Складная конструкция"],
       popular: false
     },
