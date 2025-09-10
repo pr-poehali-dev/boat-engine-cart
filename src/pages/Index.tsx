@@ -99,7 +99,7 @@ const Index = () => {
                 <CardTitle className="text-navy-dark">Собственное производство</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Полный цикл производства на нашем заводе в России</p>
+                <p className="text-gray-600">Полный цикл производства в нашей мастерской в России</p>
               </CardContent>
             </Card>
 
