@@ -1,7 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const Index = () => {
   const products = [
@@ -9,7 +11,12 @@ const Index = () => {
       id: 1,
       name: "Тележка-Автомат",
       price: "11 000",
-      image: "https://cdn.poehali.dev/files/7a7686ae-9f8c-484a-bb73-b6a630aff46f.jpg",
+      images: [
+        "https://cdn.poehali.dev/files/7a7686ae-9f8c-484a-bb73-b6a630aff46f.jpg",
+        "https://cdn.poehali.dev/files/ec9825aa-9e0c-4ac5-81f3-9e4e505374b4.jpg",
+        "https://cdn.poehali.dev/files/aa5ddb03-1544-487b-a4d3-85b069991b57.jpg",
+        "https://cdn.poehali.dev/files/9264a2e0-7cac-4c10-a12a-78ab1c99faf3.jpg"
+      ],
       features: ["До 60 кг", "Пневматические колеса", "Складная конструкция"],
       popular: false
     },
@@ -17,7 +24,7 @@ const Index = () => {
       id: 2, 
       name: "Тележка-Универсал",
       price: "10 000",
-      image: "/img/b4a1cf24-29b5-4335-8498-111162141e54.jpg",
+      images: ["/img/b4a1cf24-29b5-4335-8498-111162141e54.jpg"],
       features: ["До 60 кг", "Для моторов и лодок", "Транцевая доска"],
       popular: true
     }
@@ -147,12 +154,26 @@ const Index = () => {
                   </Badge>
                 )}
                 <CardHeader className="p-0">
-                  <div className="aspect-square overflow-hidden rounded-t-lg">
-                    <img 
-                      src={product.image} 
-                      alt={product.name}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="aspect-square overflow-hidden rounded-t-lg relative">
+                    <Carousel className="w-full h-full">
+                      <CarouselContent>
+                        {product.images.map((image, index) => (
+                          <CarouselItem key={index}>
+                            <img 
+                              src={image} 
+                              alt={`${product.name} - фото ${index + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      {product.images.length > 1 && (
+                        <>
+                          <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white" />
+                          <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white" />
+                        </>
+                      )}
+                    </Carousel>
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
