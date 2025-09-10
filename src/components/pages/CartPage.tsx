@@ -41,7 +41,17 @@ ${orderItems}
             <Icon name="ShoppingCart" size={64} className="mx-auto text-gray-300 mb-6" />
             <h1 className="text-3xl font-bold text-navy-dark mb-4">Корзина пуста</h1>
             <p className="text-xl text-gray-600 mb-8">Добавьте товары в корзину, чтобы оформить заказ</p>
-            <Button onClick={() => window.location.href = '#catalog'} size="lg">
+            <Button 
+              onClick={() => {
+                window.location.href = '/';
+                setTimeout(() => {
+                  document.getElementById('catalog')?.scrollIntoView({ 
+                    behavior: 'smooth' 
+                  });
+                }, 100);
+              }} 
+              size="lg"
+            >
               <Icon name="ArrowLeft" size={16} className="mr-2" />
               Перейти к каталогу
             </Button>
