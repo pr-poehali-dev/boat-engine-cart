@@ -93,7 +93,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-navy-dark mb-6">О нашем производстве</h2>
             <p className="text-xl text-gray-600">
-              Более 15 лет мы создаем надежные тележки для лодочных моторов, 
+              Для Вас мы создаем надежные тележки для лодочных моторов, 
               используя только качественные материалы и современные технологии.
             </p>
           </div>
