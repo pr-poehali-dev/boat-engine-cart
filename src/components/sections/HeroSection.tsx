@@ -37,9 +37,13 @@ const HeroSection = () => {
               <Icon name="ShoppingCart" size={20} className="mr-2" />
               Смотреть каталог
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 backdrop-blur-sm">
-              <Icon name="Play" size={20} className="mr-2" />
-              Видео о производстве
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => document.getElementById('production')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Icon name="Factory" size={20} className="mr-2" />
+              Наше производство
             </Button>
           </div>
         </div>
