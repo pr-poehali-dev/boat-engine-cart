@@ -1,8 +1,28 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const ContactsSection = () => {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const handleOrderCall = () => {
+    if (!name.trim() || !phone.trim()) {
+      alert("Пожалуйста, заполните имя и телефон");
+      return;
+    }
+
+    const message = `🔔 ЗАЯВКА НА ЗВОНОК\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n\n💬 Перезвоните клиенту для консультации по тележкам`;
+    const telegramUrl = `https://t.me/zvallli?text=${encodeURIComponent(message)}`;
+    
+    window.open(telegramUrl, '_blank');
+    
+    // Очистка полей после отправки
+    setName("");
+    setPhone("");
+  };
+
   return (
     <section id="contacts" className="py-20 bg-gradient-to-b from-blue-50/50 to-cyan-50">
       <div className="container mx-auto px-4">
@@ -56,6 +76,8 @@ const ContactsSection = () => {
                 <label className="text-sm font-medium text-gray-700">Ваше имя</label>
                 <input 
                   type="text" 
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="Введите имя"
                 />
@@ -64,11 +86,13 @@ const ContactsSection = () => {
                 <label className="text-sm font-medium text-gray-700">Телефон</label>
                 <input 
                   type="tel" 
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="+7 (___) ___-__-__"
                 />
               </div>
-              <Button className="w-full">
+              <Button onClick={handleOrderCall} className="w-full">
                 <Icon name="Phone" size={16} className="mr-2" />
                 Заказать звонок
               </Button>
